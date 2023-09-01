@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    />
+    <style>
+      /* Your CSS styles here */
+      body {
+        display: flex;
+        background: #000000;
+        align-items: center;
+        justify-content: center;
+        font-family: "Lucida Sans Unicode";
+        font-size: 40px;
+        height: 100vh;
+        overflow: hidden;
+        color: #96edcc;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        text-align: center; /* Center-align content within the container */
+      }
+      .end1,
+      .middle1,
+      .middle2 {
+        display: inline-block;
+        overflow: hidden;
+        height: 1.5em;
+      }
+      .end2 {
+        position: absolute;
+        color: #96edcc;
+      }
+      .middle1,
+      .middle2 {
+        color: #ffffff;
+      }
+      .middle1 {
+        animation: ani1 5s infinite;
+        animation-delay: -3s;
+        max-width: 0;
+      }
+      .middle2 {
+        animation: ani2 5s infinite;
+        animation-delay: -3s;
+        max-width: 0;
+      }
+
+      @keyframes ani1 {
+        0% {
+          max-width: 500px;
+        }
+
+        25% {
+          max-width: 0;
+        }
+
+        75% {
+          max-width: 0;
+        }
+
+        90% {
+          max-width: 500px;
+        }
+
+        100% {
+          max-width: 500px;
+        }
+      }
+
+      @keyframes ani2 {
+        0% {
+          max-width: 0;
+        }
+
+        25% {
+          max-width: 0;
+        }
+
+        50% {
+          max-width: 500px;
+        }
+
+        75% {
+          max-width: 0;
+        }
+
+        100% {
+          max-width: 0;
+        }
+      }
+
+      /* Customize the h2 and h3 tags */
+      h2 {
+        font-family: Arial, sans-serif; /* Change to the desired font family */
+        color: #ffffff; /* Change the text color to white */
+      }
+      h3 {
+        font-family: Arial, sans-serif; /* Change to the desired font family */
+        color: #ffffff; /* Change the text color to white */
+        font-size: 20px; /* Set the font size to 50% smaller than the default */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="start">
+        <span class="end1">c</span><span class="middle1">oming soo</span
+        ><span class="middle2"><i class="fas fa-code"></i></span
+        ><span class="end2">n</span>
+      </h1>
+      <h2>Innovated by Daan Wevers.</h2>
+      <h3>info@vanmoof.dev</h3>
+    </div>
+
+    <!-- JavaScript code -->
+    <script>
+      console.log(
+        "Hi developer👋, interested in working with us? Contact us at work@vanmoof.dev!"
+      );
+    </script>
+  </body>
+</html>
